@@ -1,0 +1,117 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Titillium+Web:ital,wght@0,400;1,700&display=swap");
+
+body {
+  background: linear-gradient(180deg, #3e6580 10%, #185680);
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100vh;
+}
+
+.adjust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.center {
+  height: 100%;
+  width: 100%;
+}
+.itens {
+  background-color: #31acff;
+  padding: 2% 6%;
+  border-radius: 40px;
+  box-shadow: 3px -1px 39px -10px rgba(0, 0, 0, 0.9);
+
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+.valueinput {
+  padding: 1em 17%;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 30px;
+  border: 0;
+  outline: none;
+}
+.inputs {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: grid;
+  grid-gap: 5px;
+  grid-auto-flow: row;
+  grid-template-areas: "numb numb numb numb";
+}
+.number,
+.operator {
+  padding: 35px;
+  border-radius: 20px;
+  border: 2px solid white;
+  background-color: #d5f3ff5b;
+
+  color: white;
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+}
+
+.equal {
+  background-color: #58a3f85b;
+  grid-column: span 2;
+}
+
+.number:hover,
+.operator:hover {
+  background-color: #7ca3b15b;
+}
+#clean {
+  margin-top: 20px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 2px solid white;
+  background-color: #d5f3ff5b;
+
+  color: white;
+  font-size: 12px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+}
+#clean:hover {
+  background-color: #7ca3b15b;
+}
+
+@media (max-width: 850px) {
+  .number,
+  .operator {
+    padding: 28px;
+  }
+  .valueinput {
+    padding: .5em 2%;
+  }
+}
+@media (max-width: 370px) {
+  h1{
+    font-size: 48px;
+  }
+  .number,
+  .operator {
+    padding: 21px;
+  }
+  .valueinput {
+    font-size: 22px;
+    padding: .5em 10%;
+  }
+  .itens{
+    background-color: #31adff00;
+    box-shadow: none;
+  }
+  body{
+    background: #0095ff;
+  }
+}
+

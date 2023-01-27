@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <!--Calculator body:-->
+    <div class="adjust center">
+      <div class="adjust itens">
+        <h1 style="margin: 0;  font-weight: 700;">Calculator</h1>
+        <input type="text" name="value" id="input-calc" class="valueinput" maxlength="11" min="3" placeholder="enter the values"/>
+        <input type="button" name="clean" id="clean" value="C">
+        <div class="inputs">
+          <!-- numbers -->
+          <input type="button" value="1" name="1" class="btn number"/>
+          <input type="button" value="2" name="2" class="btn number" />
+          <input type="button" value="3" name="3" class="btn number" />
+          <input type="button" value="4" name="4" class="btn number" />
+          <input type="button" value="5" name="5" class="btn number" />
+          <input type="button" value="6" name="6" class="btn number" />
+          <input type="button" value="7" name="7" class="btn number" />
+          <input type="button" value="8" name="8" class="btn number" />
+          <input type="button" value="9" name="9" class="btn number" />
+          <input type="button" value="0" name="0" class="btn number" />
+          <!-- operations -->
+          <input type="button" value="+" name="add" class="btn operator add" />
+          <input type="button" value="-" name="sub" class="btn operator sub" />
+          <input type="button" value="*" name="mult" class="btn operator mult" />
+          <input type="button" value="/" name="divi" class="btn operator divi" />
+          <input type="submit" value="=" name="equal" class="btn operator equal" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--script to run the calculations:-->
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>
